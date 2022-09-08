@@ -1,17 +1,8 @@
 {
-  "name": "@antv/gatsby-theme-antv",
-  "description": "Ant Visualization solution home page",
-  "version": "1.1.18-beta.0",
-  "author": "AntV Team <antv@antfin.com>",
-  "license": "MIT",
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "gatsby-theme",
-    "antv",
-    "antvis",
-    "antd"
-  ],
+  "name": "gatsby-demo",
+  "description": "gatsby-demo",
+  "version": "0.0.1",
+  "keywords": [],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -20,14 +11,6 @@
     "release": "release-it",
     "copy:components": "mkdir -p lib && cp -R .tmp/@antv/gatsby-theme-antv/site/components lib && cp -R .tmp/@antv/gatsby-theme-antv/site/*.* lib && cp site/components/*.less ./lib/components && cp site/common.json ./lib && cp -R site/images ./lib",
     "compile:components": "rm -rf .tmp lib && ../../node_modules/.bin/tsc --outDir .tmp --noEmit false -d && npm run copy:components"
-  },
-  "homepage": "https://antvis.github.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/antvis/gatsby-theme-antv"
-  },
-  "bugs": {
-    "url": "https://github.com/antvis/gatsby-theme-antv/issues"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-umd": "^7.2.0",
@@ -57,11 +40,9 @@
     "release-it": "^14.0.1",
     "typescript": "^4.0.2"
   },
-  "peerDependencies": {
-    "react": "^16.9.0 || ^17.0.0",
-    "react-dom": "^16.9.0 || ^17.0.0"
-  },
   "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "@ant-design/icons": "^4.1.0",
     "@docsearch/js": "^3.0.0",
     "@hot-loader/react-dom": "^16.9.0+4.12.11",
@@ -149,9 +130,6 @@
         "npm run compile:components"
       ]
     }
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "resolutions": {
     "normalize-url": "^4.1.0"

@@ -33,17 +33,6 @@ if (window.location.host.includes('antv')) {
   }(window,document,'script','https://ur.alipay.com/tracert_a369.js','Tracert');
   // 启动脚本
   Tracert.start();
-
-  // 2. console 打印广告
-  console.log('%cAntV 让数据栩栩如生', 'color:#5B7102; font-size: 20px;');
-  console.log('%c新一代数据可视化解决方案', 'color:#5B7102;');
-  console.log('--------------------------');
-  console.log(
-    '%c关注我们的微信公众号 %c“数据可视化 AntV”%c，获取我们团队最新的进展、动态、分享，也欢迎加入我们！',
-    'color: red',
-    'color: pink',
-    'color: red',
-  );
 }
 
 // gatsby-browser.js

@@ -96,7 +96,6 @@ const PlayGround: React.FC<PlayGroundProps> = ({
       query {
         site {
           siteMetadata {
-            showChartResize
             themeSwitcher
             showAPIDoc
             githubUrl
@@ -126,7 +125,7 @@ const PlayGround: React.FC<PlayGroundProps> = ({
 
   const localLayout =
     typeof window !== 'undefined' ? localStorage.getItem('layout') : null;
-  const { showChartResize, showAPIDoc, themeSwitcher } = site.siteMetadata;
+  const { showAPIDoc, themeSwitcher } = site.siteMetadata;
   const [layout, updateLayout] = useState<string>(localLayout || 'viewDefault');
   const [codeQuery, updateCodeQuery] = useState<string>('');
   const { i18n, t } = useTranslation();
@@ -619,9 +618,6 @@ insertCss(`;
                 }
                 extra={
                   <Space split={<Divider type="vertical" />}>
-                    {showChartResize && layout === 'viewDefault' && (
-                      <ChartViewSwitcher updateView={updateView} view={view} />
-                    )}
                     {showAPIDoc && !docsEmpty && layout !== 'viewTwoRows' && (
                       <LayoutSwitcher updateLayout={updateLayout} />
                     )}

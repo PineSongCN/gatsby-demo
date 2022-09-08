@@ -528,7 +528,6 @@ exports.sourceNodes = ({ actions }) => {
       redirects: [SiteSiteMetadataRedirects]
       isAntvSite: Boolean
       galleryMenuCloseAll: Boolean
-      showChartResize: Boolean
       themeSwitcher: String
       showAPIDoc: Boolean
       showChinaMirror: Boolean
